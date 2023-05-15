@@ -1,0 +1,11 @@
+
+1> npm init -y
+2>npm install express
+
+also learn middle ware:-Middleware functions have access to the request object (req), 
+  the response object (res), and a callback function (next) in the middleware stack. 
+  They can manipulate the request and response objects, execute some code, and decide whether to pass control to the next middleware or terminate the request-response cycle.
+
+
+  The order in which middleware is defined and mounted is crucial, as it determines the order of execution. Middleware functions are executed in the order they are added, and they can pass control to the next middleware by calling the next() function.
+   If next() is not called, the request-response cycle is terminated, and no further middleware or route handlers are executed.
